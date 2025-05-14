@@ -135,6 +135,22 @@ p{
     color: white;
     text-decoration: underline;
   }
+
+.intro-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.owl-carousel .item {
+  padding: 10px;
+}
+
+.owl-carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
   /* Shadow effect when navbar is scrolled */
 .navbar-custom.navbar-scrolled {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
