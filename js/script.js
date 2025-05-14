@@ -69,3 +69,39 @@ $(document).ready(function(){
     selector: '.glightbox'
   });
 });
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      let form = e.target;
+      let name = form.name;
+      let email = form.email;
+      let message = form.message;
+
+      let isValid = true;
+
+      if (!name.value.trim()) {
+        name.classList.add("is-invalid");
+        isValid = false;
+      } else {
+        name.classList.remove("is-invalid");
+      }
+
+      if (!email.value.trim() || !email.value.includes("@")) {
+        email.classList.add("is-invalid");
+        isValid = false;
+      } else {
+        email.classList.remove("is-invalid");
+      }
+
+      if (!message.value.trim()) {
+        message.classList.add("is-invalid");
+        isValid = false;
+      } else {
+        message.classList.remove("is-invalid");
+      }
+
+      if (isValid) {
+        document.getElementById("successMsg").classList.remove("d-none");
+        form.reset();
+      }
+    });
