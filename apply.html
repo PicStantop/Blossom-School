@@ -45,81 +45,72 @@
     </div>
   </nav>
 
-  <section class="max-w-3xl mx-auto p-8 bg-white rounded-2xl shadow-md mt-10">
-  <h1 class="text-4xl font-bold text-center text-green-700 mb-6">Join the Blossom School Family</h1>
-  <p class="text-lg text-gray-700 text-center mb-10">
-    We're excited you're considering Blossom School! Our vibrant learning community is dedicated to nurturing each child’s curiosity, creativity, and confidence. Apply today and take the first step toward a joyful and meaningful educational journey.
-  </p>
-
-  <form class="space-y-6">
-    <div>
-      <label class="block text-gray-800 font-medium mb-1" for="student-name">Student's Full Name</label>
-      <input type="text" id="student-name" name="student-name" required
-        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400" />
-    </div>
-
-    <div>
-      <label class="block text-gray-800 font-medium mb-1" for="dob">Date of Birth</label>
-      <input type="date" id="dob" name="dob" required
-        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400" />
-    </div>
-
-    <div>
-      <label class="block text-gray-800 font-medium mb-1" for="grade">Applying for Grade</label>
-      <select id="grade" name="grade" required
-        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400">
-        <option value="">Select Grade</option>
-        <option value="pre-k">Nursery 1</option>
-        <option value="kindergarten">Nursery 2</option>
-        <option value="1">Basic 1</option>
-        <option value="2">Basic 2</option>
-        <option value="3">Basic 3</option>
-        <option value="4">Basic 4</option>
-        <option value="5">Basic 5</option>
-        <option value="6">Basic 6</option>
-        <option value="7">Jss 1</option>
-        <option value="8">Jss 2</option>
-        <option value="9">Jss 3</option>
-        <option value="10">SS 1</option>
-        <option value="11">SS 2</option>
-        <option value="12">SS 3</option>
-        <!-- Add more grades as needed -->
-      </select>
-    </div>
-
-    <div>
-      <label class="block text-gray-800 font-medium mb-1" for="parent-name">Parent/Guardian Name</label>
-      <input type="text" id="parent-name" name="parent-name" required
-        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400" />
-    </div>
-
-    <div>
-      <label class="block text-gray-800 font-medium mb-1" for="email">Email Address</label>
-      <input type="email" id="email" name="email" required
-        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400" />
-    </div>
-
-    <div>
-      <label class="block text-gray-800 font-medium mb-1" for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" required
-        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400" />
-    </div>
-
-    <div>
-      <label class="block text-gray-800 font-medium mb-1" for="message">Tell Us About Your Child</label>
-      <textarea id="message" name="message" rows="4"
-        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
-        placeholder="What makes your child special? What are you hoping they'll gain at Blossom School?"></textarea>
-    </div>
-
-    <div class="text-center">
-      <button type="submit"
-        class="bg-green-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-green-700 transition duration-300">
-        Submit Application
-      </button>
-    </div>
-  </form>
-        </section>
+  <section class="container my-5 p-4 bg-white rounded-4 shadow">
+    <h1 class="text-center text-success fw-bold mb-4 display-6">Join the Blossom School Family</h1>
+    <p class="text-center text-muted mb-5 fs-5">
+      We're excited you're considering Blossom School! Our vibrant learning community is dedicated to nurturing each child’s curiosity, creativity, and confidence. Apply today and take the first step toward a joyful and meaningful educational journey.
+    </p>
+  
+    <form class="row g-4">
+      <div class="col-12">
+        <label for="student-name" class="form-label fw-semibold">Student's Full Name</label>
+        <input type="text" class="form-control" id="student-name" name="student-name" required>
+      </div>
+  
+      <div class="col-12">
+        <label for="dob" class="form-label fw-semibold">Date of Birth</label>
+        <input type="date" class="form-control" id="dob" name="dob" required>
+      </div>
+  
+      <div class="col-12">
+        <label for="grade" class="form-label fw-semibold">Applying for Grade</label>
+        <select class="form-select" id="grade" name="grade" required>
+          <option value="">Select Grade</option>
+          <option value="pre-k">Nursery 1</option>
+          <option value="kindergarten">Nursery 2</option>
+          <option value="1">Basic 1</option>
+          <option value="2">Basic 2</option>
+          <option value="3">Basic 3</option>
+          <option value="4">Basic 4</option>
+          <option value="5">Basic 5</option>
+          <option value="6">Basic 6</option>
+          <option value="7">Jss 1</option>
+          <option value="8">Jss 2</option>
+          <option value="9">Jss 3</option>
+          <option value="10">SS 1</option>
+          <option value="11">SS 2</option>
+          <option value="12">SS 3</option>
+        </select>
+      </div>
+  
+      <div class="col-12">
+        <label for="parent-name" class="form-label fw-semibold">Parent/Guardian Name</label>
+        <input type="text" class="form-control" id="parent-name" name="parent-name" required>
+      </div>
+  
+      <div class="col-12">
+        <label for="email" class="form-label fw-semibold">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+  
+      <div class="col-12">
+        <label for="phone" class="form-label fw-semibold">Phone Number</label>
+        <input type="tel" class="form-control" id="phone" name="phone" required>
+      </div>
+  
+      <div class="col-12">
+        <label for="message" class="form-label fw-semibold">Tell Us About Your Child</label>
+        <textarea class="form-control" id="message" name="message" rows="4" placeholder="What makes your child special? What are you hoping they'll gain at Blossom School?"></textarea>
+      </div>
+  
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-success px-4 py-2 fw-semibold rounded-pill">
+          Submit Application
+        </button>
+      </div>
+    </form>
+  </section>
+  
 
     <!-- Footer -->
     <footer class="footer">
