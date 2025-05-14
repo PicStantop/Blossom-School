@@ -38,6 +38,51 @@ p{
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+/* Admin Board Section */
+.admin-board {
+  background-color: #f5f9ff;
+  padding: 60px 20px;
+}
+
+.admin-board h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #004080;
+}
+
+.admin-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.admin-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.admin-card img {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #004080;
+}
+
+.admin-card h5 {
+  font-weight: 700;
+  color: #004080;
+}
+
+.admin-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
 
 /* Hero Section Styles */
 .hero-section {
