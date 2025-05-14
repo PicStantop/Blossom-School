@@ -48,4 +48,24 @@ window.addEventListener('scroll', function () {
     navbar.classList.remove('navbar-scrolled');
   }
 });
-    
+
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 15,
+    nav: true,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive: {
+      0: { items: 1 },
+      768: { items: 2 },
+      992: { items: 3 }
+    }
+  });
+
+  const lightbox = GLightbox({
+    selector: '.glightbox'
+  });
+});
